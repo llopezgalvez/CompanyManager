@@ -1,0 +1,521 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "GestorDeEmpresas",
+    "dateExported": "2024-03-03T21:04:27.063Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "944a0ab9-9572-43fd-8c6a-efd13710592a",
+            "name": "Company",
+            "containerId": "",
+            "created": "2024-03-02T18:55:09.844Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "e33e32a4-abd0-4c5d-8ab5-eaad7ab3aa1b",
+            "name": "Category",
+            "containerId": "",
+            "created": "2024-03-02T19:07:09.327Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "26af710a-b5b3-435c-bb3c-45f1abd91229",
+            "name": "User",
+            "containerId": "",
+            "created": "2024-03-02T21:34:15.577Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "3ac9ea9b-9af3-4877-ab17-5566ebe72dea",
+            "name": "Reportes",
+            "containerId": "",
+            "created": "2024-03-03T02:52:19.875Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "b346d2d5-cf61-42e4-9657-a6cddc4a3c12",
+            "colId": "18b9b2fc-c04d-41c7-bc79-8fcaf396e6d9",
+            "containerId": "944a0ab9-9572-43fd-8c6a-efd13710592a",
+            "name": "Add Company",
+            "url": "/company/addCompany",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-02T18:55:19.412Z",
+            "modified": "2024-03-03T20:54:03.076Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZTAzZDQ3ZGNkZDUxMDkwYTkwZDIiLCJ1c2VybmFtZSI6Im5nYXJjaWEiLCJuYW1lIjoiTmljb2xlIiwiaWF0IjoxNzA5NDk4NDg2LCJleHAiOjE3MTIwOTA0ODZ9.xqUcCluXquAwLMamcgUH1Nt2vjIJ19Ivs48Rlbr96iw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nameCompany",
+                        "value": "Samsung"
+                    },
+                    {
+                        "name": "ImpactLevel",
+                        "value": "Alto"
+                    },
+                    {
+                        "name": "yearsOfTrajectory",
+                        "value": "32"
+                    },
+                    {
+                        "name": "businessCategory",
+                        "value": "65e3d0d9e5adde772c8ce51d"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "62884355-f773-467a-b221-9ded06c2fdc6",
+            "colId": "18b9b2fc-c04d-41c7-bc79-8fcaf396e6d9",
+            "containerId": "e33e32a4-abd0-4c5d-8ab5-eaad7ab3aa1b",
+            "name": "Add Category",
+            "url": "/category/addCategory",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-02T19:07:15.957Z",
+            "modified": "2024-03-03T20:46:30.461Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZTAzZDQ3ZGNkZDUxMDkwYTkwZDIiLCJ1c2VybmFtZSI6Im5nYXJjaWEiLCJuYW1lIjoiTmljb2xlIiwiaWF0IjoxNzA5NDk4NDg2LCJleHAiOjE3MTIwOTA0ODZ9.xqUcCluXquAwLMamcgUH1Nt2vjIJ19Ivs48Rlbr96iw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nameCategory",
+                        "value": "Educación y Formación"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Comprende instituciones educativas, tanto públicas como privadas, así como empresas de capacitación y formación profesional."
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "585beed9-d5a9-4b80-9335-a64de1b5a015",
+            "colId": "18b9b2fc-c04d-41c7-bc79-8fcaf396e6d9",
+            "containerId": "e33e32a4-abd0-4c5d-8ab5-eaad7ab3aa1b",
+            "name": "Delete Category",
+            "url": "/category/deleteCategory/65e4e17647dcdd51090a90ea",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-03-02T19:48:09.179Z",
+            "modified": "2024-03-03T21:01:55.473Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZTAzZDQ3ZGNkZDUxMDkwYTkwZDIiLCJ1c2VybmFtZSI6Im5nYXJjaWEiLCJuYW1lIjoiTmljb2xlIiwiaWF0IjoxNzA5NDk4NDg2LCJleHAiOjE3MTIwOTA0ODZ9.xqUcCluXquAwLMamcgUH1Nt2vjIJ19Ivs48Rlbr96iw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d9cd7fa2-7df3-4540-bb53-6596587a178f",
+            "colId": "18b9b2fc-c04d-41c7-bc79-8fcaf396e6d9",
+            "containerId": "e33e32a4-abd0-4c5d-8ab5-eaad7ab3aa1b",
+            "name": "Update Category",
+            "url": "/category/updateCategory/65e3d0d0e5adde772c8ce51a",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-03-02T19:48:15.195Z",
+            "modified": "2024-03-03T20:49:16.618Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZTAzZDQ3ZGNkZDUxMDkwYTkwZDIiLCJ1c2VybmFtZSI6Im5nYXJjaWEiLCJuYW1lIjoiTmljb2xlIiwiaWF0IjoxNzA5NDk4NDg2LCJleHAiOjE3MTIwOTA0ODZ9.xqUcCluXquAwLMamcgUH1Nt2vjIJ19Ivs48Rlbr96iw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nameCategory",
+                        "value": "Religion"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Religion catolica"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "dcb2de99-47ee-4a9e-ad9b-18683e4db4a4",
+            "colId": "18b9b2fc-c04d-41c7-bc79-8fcaf396e6d9",
+            "containerId": "e33e32a4-abd0-4c5d-8ab5-eaad7ab3aa1b",
+            "name": "Get Categories",
+            "url": "/category/getCategory",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-03-02T19:48:24.342Z",
+            "modified": "2024-03-03T20:49:45.544Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZTAzZDQ3ZGNkZDUxMDkwYTkwZDIiLCJ1c2VybmFtZSI6Im5nYXJjaWEiLCJuYW1lIjoiTmljb2xlIiwiaWF0IjoxNzA5NDk4NDg2LCJleHAiOjE3MTIwOTA0ODZ9.xqUcCluXquAwLMamcgUH1Nt2vjIJ19Ivs48Rlbr96iw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b6d3a0ad-ac2c-44d8-8cb5-647646f84399",
+            "colId": "18b9b2fc-c04d-41c7-bc79-8fcaf396e6d9",
+            "containerId": "26af710a-b5b3-435c-bb3c-45f1abd91229",
+            "name": "Create User",
+            "url": "/user/createUser",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-03-02T21:34:31.980Z",
+            "modified": "2024-03-03T20:40:29.731Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Nicole"
+                    },
+                    {
+                        "name": "lastName",
+                        "value": "Garcia"
+                    },
+                    {
+                        "name": "mail",
+                        "value": "ngarcia-2022145@kinal.edu.gt"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "87654321"
+                    },
+                    {
+                        "name": "username",
+                        "value": "ngarcia"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "fe098844-a8a9-45b3-8e36-5851e54b76f4",
+            "colId": "18b9b2fc-c04d-41c7-bc79-8fcaf396e6d9",
+            "containerId": "26af710a-b5b3-435c-bb3c-45f1abd91229",
+            "name": "List Users",
+            "url": "/user/getUsers",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-03-02T21:34:37.946Z",
+            "modified": "2024-03-03T20:43:38.544Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZTAzZDQ3ZGNkZDUxMDkwYTkwZDIiLCJ1c2VybmFtZSI6Im5nYXJjaWEiLCJuYW1lIjoiTmljb2xlIiwiaWF0IjoxNzA5NDk4NDg2LCJleHAiOjE3MTIwOTA0ODZ9.xqUcCluXquAwLMamcgUH1Nt2vjIJ19Ivs48Rlbr96iw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fc815a2e-a9e5-43cb-9254-4c0499000683",
+            "colId": "18b9b2fc-c04d-41c7-bc79-8fcaf396e6d9",
+            "containerId": "26af710a-b5b3-435c-bb3c-45f1abd91229",
+            "name": "Login",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-03-02T21:34:42.657Z",
+            "modified": "2024-03-03T20:41:26.265Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "mail",
+                        "value": "llopez-2022064@kinal.edu.gt",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "phone",
+                        "value": "12345678",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "username",
+                        "value": "llopez",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "username",
+                        "value": "ngarcia"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "c9f57433-3c51-4baa-86d2-1d845e67e6e4",
+            "colId": "18b9b2fc-c04d-41c7-bc79-8fcaf396e6d9",
+            "containerId": "944a0ab9-9572-43fd-8c6a-efd13710592a",
+            "name": "Update Company",
+            "url": "/company/updateCompany/65e4d72b27248f1e6a30086f",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2024-03-02T22:07:08.202Z",
+            "modified": "2024-03-03T20:54:49.414Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZTAzZDQ3ZGNkZDUxMDkwYTkwZDIiLCJ1c2VybmFtZSI6Im5nYXJjaWEiLCJuYW1lIjoiTmljb2xlIiwiaWF0IjoxNzA5NDk4NDg2LCJleHAiOjE3MTIwOTA0ODZ9.xqUcCluXquAwLMamcgUH1Nt2vjIJ19Ivs48Rlbr96iw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nameCompany",
+                        "value": "Movistar",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "ImpactLevel",
+                        "value": "Bajo"
+                    },
+                    {
+                        "name": "yearsOfTrajectory",
+                        "value": "",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "businessCategory",
+                        "value": "",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "af05db2b-9f89-423c-90ec-be73e1ece138",
+            "colId": "18b9b2fc-c04d-41c7-bc79-8fcaf396e6d9",
+            "containerId": "944a0ab9-9572-43fd-8c6a-efd13710592a",
+            "name": "Get Companies",
+            "url": "/company/getCompanies",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2024-03-02T22:07:23.001Z",
+            "modified": "2024-03-03T20:55:18.409Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZTAzZDQ3ZGNkZDUxMDkwYTkwZDIiLCJ1c2VybmFtZSI6Im5nYXJjaWEiLCJuYW1lIjoiTmljb2xlIiwiaWF0IjoxNzA5NDk4NDg2LCJleHAiOjE3MTIwOTA0ODZ9.xqUcCluXquAwLMamcgUH1Nt2vjIJ19Ivs48Rlbr96iw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1af208d5-f1cb-4c43-892f-30f6325cb22b",
+            "colId": "18b9b2fc-c04d-41c7-bc79-8fcaf396e6d9",
+            "containerId": "944a0ab9-9572-43fd-8c6a-efd13710592a",
+            "name": "Get companies A-Z",
+            "url": "/company/getCompaniesAZ",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2024-03-03T01:02:42.097Z",
+            "modified": "2024-03-03T20:55:31.257Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZTAzZDQ3ZGNkZDUxMDkwYTkwZDIiLCJ1c2VybmFtZSI6Im5nYXJjaWEiLCJuYW1lIjoiTmljb2xlIiwiaWF0IjoxNzA5NDk4NDg2LCJleHAiOjE3MTIwOTA0ODZ9.xqUcCluXquAwLMamcgUH1Nt2vjIJ19Ivs48Rlbr96iw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8fba7e82-cefd-4988-a29b-8e8066f25df6",
+            "colId": "18b9b2fc-c04d-41c7-bc79-8fcaf396e6d9",
+            "containerId": "944a0ab9-9572-43fd-8c6a-efd13710592a",
+            "name": "GET companies Z-A",
+            "url": "/company/getCompaniesZA",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2024-03-03T01:02:49.260Z",
+            "modified": "2024-03-03T20:55:48.601Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZTAzZDQ3ZGNkZDUxMDkwYTkwZDIiLCJ1c2VybmFtZSI6Im5nYXJjaWEiLCJuYW1lIjoiTmljb2xlIiwiaWF0IjoxNzA5NDk4NDg2LCJleHAiOjE3MTIwOTA0ODZ9.xqUcCluXquAwLMamcgUH1Nt2vjIJ19Ivs48Rlbr96iw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "08a7d3ac-01e6-4275-be9b-a13cafb00bc4",
+            "colId": "18b9b2fc-c04d-41c7-bc79-8fcaf396e6d9",
+            "containerId": "944a0ab9-9572-43fd-8c6a-efd13710592a",
+            "name": "Get companies for year",
+            "url": "/company/getCompaniesForYear",
+            "method": "GET",
+            "sortNum": 170000,
+            "created": "2024-03-03T01:03:44.294Z",
+            "modified": "2024-03-03T20:56:03.079Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZTAzZDQ3ZGNkZDUxMDkwYTkwZDIiLCJ1c2VybmFtZSI6Im5nYXJjaWEiLCJuYW1lIjoiTmljb2xlIiwiaWF0IjoxNzA5NDk4NDg2LCJleHAiOjE3MTIwOTA0ODZ9.xqUcCluXquAwLMamcgUH1Nt2vjIJ19Ivs48Rlbr96iw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "61b01e54-6e4f-4dc7-8220-fb8f126d9c95",
+            "colId": "18b9b2fc-c04d-41c7-bc79-8fcaf396e6d9",
+            "containerId": "944a0ab9-9572-43fd-8c6a-efd13710592a",
+            "name": "Get companies for category",
+            "url": "/company/getCompaniesForCategory",
+            "method": "GET",
+            "sortNum": 180000,
+            "created": "2024-03-03T01:23:35.081Z",
+            "modified": "2024-03-03T20:56:17.745Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZTAzZDQ3ZGNkZDUxMDkwYTkwZDIiLCJ1c2VybmFtZSI6Im5nYXJjaWEiLCJuYW1lIjoiTmljb2xlIiwiaWF0IjoxNzA5NDk4NDg2LCJleHAiOjE3MTIwOTA0ODZ9.xqUcCluXquAwLMamcgUH1Nt2vjIJ19Ivs48Rlbr96iw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "search",
+                        "value": "Telefonico"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f3d7e8f2-2798-4b9c-9075-d2e95887d76d",
+            "colId": "18b9b2fc-c04d-41c7-bc79-8fcaf396e6d9",
+            "containerId": "3ac9ea9b-9af3-4877-ab17-5566ebe72dea",
+            "name": "Reporte",
+            "url": "/company/informe",
+            "method": "GET",
+            "sortNum": 190000,
+            "created": "2024-03-03T02:53:16.232Z",
+            "modified": "2024-03-03T20:57:15.599Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZTAzZDQ3ZGNkZDUxMDkwYTkwZDIiLCJ1c2VybmFtZSI6Im5nYXJjaWEiLCJuYW1lIjoiTmljb2xlIiwiaWF0IjoxNzA5NDk4NDg2LCJleHAiOjE3MTIwOTA0ODZ9.xqUcCluXquAwLMamcgUH1Nt2vjIJ19Ivs48Rlbr96iw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b1961174-7ece-4005-b9de-2c833c5a2691",
+            "colId": "18b9b2fc-c04d-41c7-bc79-8fcaf396e6d9",
+            "containerId": "26af710a-b5b3-435c-bb3c-45f1abd91229",
+            "name": "Update User",
+            "url": "/user/updateUser/65e4e03d47dcdd51090a90d2",
+            "method": "PUT",
+            "sortNum": 200000,
+            "created": "2024-03-03T19:16:54.933Z",
+            "modified": "2024-03-03T20:43:07.421Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZTAzZDQ3ZGNkZDUxMDkwYTkwZDIiLCJ1c2VybmFtZSI6Im5nYXJjaWEiLCJuYW1lIjoiTmljb2xlIiwiaWF0IjoxNzA5NDk4NDg2LCJleHAiOjE3MTIwOTA0ODZ9.xqUcCluXquAwLMamcgUH1Nt2vjIJ19Ivs48Rlbr96iw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Nicole"
+                    },
+                    {
+                        "name": "lastName",
+                        "value": "",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "mail",
+                        "value": "",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "username",
+                        "value": "",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "oldPassword",
+                        "value": "12345678",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "newPassword",
+                        "value": "Lester",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2880"
+        }
+    }
+}
